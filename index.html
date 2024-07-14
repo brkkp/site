@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar nav-main nav">
+      <div class="navbar__head">
+        <div class="navbar__user-box">
+          <div>
+            <button type="button" class="button button--login">Sing in</button>
+          </div>
+
+          <div>
+            <p class="user user--title">Welcome</p>
+            <a href="#" class="user user--nickname link"></a>
+          </div>
+
+          <div>
+            <p class="user user--date"></p>
+          </div>
+        </div>
+
+        <a href="#" class="nav__link nav__btn-user link">
+          <svg class="icon icon--menu-dec">
+            <use xlink:href="./assets/sprite.svg#icon-menu" class="menu"></use>
+            <use xlink:href="./assets/sprite.svg#icon-gear" class="gear"></use>
+          </svg>
+          <img
+            src="./assets/icons8-user-60.png"
+            class="user user--img"
+            alt="User image"
+          />
+        </a>
+      </div>
+
+      <!-- body -->
+      <div class="navbar__body">
+        <ul class="navbar__list navbar__list--primary">
+          <li class="nav__item">
+            <a href="#" class="nav__link link f-red" id="home">
+              <svg class="icon">
+                <use xlink:href="./assets/sprite.svg#icon-home2"></use>
+              </svg>
+              <p class="details details--navigator">Home</p>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link link f-blue" id="resources">
+              <svg class="icon">
+                <use xlink:href="./assets/sprite.svg#icon-aim"></use>
+              </svg>
+              <p class="details details--navigator">Resources</p>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link link" id="other">
+              <svg class="icon">
+                <use xlink:href="./assets/sprite.svg#icon-map"></use>
+              </svg>
+              <p class="details details--navigator">Tools</p>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link link" id="other">
+              <svg class="icon">
+                <use xlink:href="./assets/sprite.svg#icon-map"></use>
+              </svg>
+              <p class="details details--navigator">About</p>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link link" id="other">
+              <svg class="icon">
+                <use xlink:href="./assets/sprite.svg#icon-home"></use>
+              </svg>
+              <p class="details details--navigator">Settings</p>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link link" id="other">
+              <svg class="icon">
+                <use xlink:href="./assets/sprite.svg#icon-map"></use>
+              </svg>
+              <p class="details details--navigator">Information</p>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link link" id="other">
+              <svg class="icon">
+                <use xlink:href="./assets/sprite.svg#icon-map"></use>
+              </svg>
+              <p class="details details--navigator">Information</p>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link link" id="other">
+              <svg class="icon">
+                <use xlink:href="./assets/sprite.svg#icon-map"></use>
+              </svg>
+              <p class="details details--navigator">Ask</p>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link link" id="other">
+              <svg class="icon">
+                <use xlink:href="./assets/sprite.svg#icon-map"></use>
+              </svg>
+              <p class="details details--navigator">Other</p>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link link" id="other">
+              <svg class="icon">
+                <use xlink:href="./assets/sprite.svg#icon-map"></use>
+              </svg>
+              <p class="details details--navigator">Information</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="auth-box auth">
+      <button type="button" class="button auth__button-close">
+        <svg class="icon icon--btn">
+          <use xlink:href="./assets/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <form action="#" method="get" class="form form--login">
+        <div class="form__box-photo">
+          <img src="./assets/icons8-user-60.png" alt="" class="form__img" />
+        </div>
+
+        <input
+          type="text"
+          name="nick"
+          id="u-nickname--login"
+          placeholder="Your email or username"
+          class="form__input form__input--nick"
+          required
+        />
+        <input
+          type="password"
+          name="psw"
+          id="u-password--login"
+          placeholder="Your key"
+          class="form__input form__input--psw"
+          required
+        />
+
+        <button
+          type="submit"
+          class="form__button-submit form__button-submit--login"
+        >
+          Send request
+        </button>
+      </form>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>
